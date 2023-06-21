@@ -9,7 +9,7 @@ const Clock = ({ onDaytimeChange }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://worldtimeapi.org/api/ip');
+        const response = await fetch('https://worldtimeapi.org/api/ip');
         if (!response.ok) {
           throw new Error('Erro na solicitação: ' + response.status);
         }
